@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tdl.viewpagerdrawer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:uiOptions="splitActionBarWhenNarrow"
+        android:allowBackup="true"
+        android:icon="@drawable/directory_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault.Light" >
+        <activity
+           
+           android:name="authentication.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.support.UI_OPTIONS"
+                   android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="authentication.SignIn"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name="authentication.SignUp"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+		
+          <activity android:name="com.tdl.viewpagerdrawer.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light"/>
+       <activity
+            android:icon="@drawable/ic_action_settings"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:name="settings.Settings"
+            android:parentActivityName="com.tdl.viewpagerdrawer.MainActivity"
+            android:label="@string/action_settings" >
+        </activity>
+        <activity
+            android:icon="@drawable/ic_action_settings"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:name="settings.Settings_Account"
+            android:parentActivityName="settings.Settings"
+            android:label="@string/action_settings" >
+            <intent-filter>
+                <action android:name="com.tdl.viewpagerdrawer.Settings_Account"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

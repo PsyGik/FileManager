@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--     Account Settings -->
+    <PreferenceCategory
+        android:title="@string/account_settings"
+        android:key="pref_key_storage_settings">
+        <Preference
+            android:key="user_name"
+            android:summary="user123-p"
+            android:title="@string/phytter_user_name"
+            android:defaultValue="false" />
+        <Preference
+            android:key="used_space"
+            android:summary="25.00MB of 2.00GB"
+            android:title="@string/used_space" />
+        <!-- opens account settings subscreen -->
+        <PreferenceScreen
+            android:key="more"
+            android:title="@string/more"
+            android:persistent="false">
+            <intent android:action="com.tdl.viewpagerdrawer.Settings_Account"/>
+            <!--<PreferenceCategory
+                android:title="@string/account_settings"
+                android:key="account_settings">
+                <Preference
+                    android:key="user_name"
+                    android:summary="user123-p"
+                    android:title="@string/phytter_user_name"
+                    android:defaultValue="false" />
+                <Preference
+                    android:key="used_space"
+                    android:summary="25.00MB of 2.00GB"
+                    android:title="@string/used_space" />
+
+                <Preference
+                    android:key="upgrade_account"
+                    android:summary="Current Plan 2.00GB"
+                    android:title="@string/upgrade_account" />
+                <Preference
+                    android:key="change_password"
+                    android:title="@string/change_password" />
+                <Preference
+                    android:key="logout"
+                    android:title="@string/logout" />
+            </PreferenceCategory>-->
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <!--         Camera Auto Upload Settings-->
+    <PreferenceCategory
+        android:title="@string/camera_auto_upload"
+        android:key="camera_auto_upload">
+        <SwitchPreference
+            android:key="auto_upload"
+            android:summary="Automatically Upload Camera Photos"
+            android:title="@string/auto_upload"
+            android:defaultValue="false" />
+        <Preference
+            android:key="auto_upload_wifi"
+            android:dependency="auto_upload"
+            android:summary="Wifi Only"
+            android:title="@string/upload_over" />
+    </PreferenceCategory>
+
+    <!--         App Settings  -->
+    <PreferenceCategory
+        android:title="@string/about"
+        android:key="account_settings">
+        <Preference
+            android:key="app_version"
+            android:summary="1.2.3"
+            android:title="@string/app_version"
+            android:defaultValue="false" />
+        <Preference
+            android:key="send_feedback"
+            android:title="@string/send_feedback" />
+    </PreferenceCategory>
+</PreferenceScreen>

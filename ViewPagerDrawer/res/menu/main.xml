@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/add"
+        android:title="@string/action_add"/>
+    
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/refresh"
+        android:title="@string/action_refresh"/>
+    
+    <item
+        android:id="@+id/action_upload"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/upload"
+        android:title="@string/action_upload"/>
+        
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/settings"
+        android:title="@string/action_settings"/>
+
+</menu>

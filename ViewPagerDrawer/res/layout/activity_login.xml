@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="PhytterDock"
+        android:textColor="#000099"
+        android:textSize="50sp" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:autoStart="true"
+        android:layout_margin="6dip"
+        android:layout_weight="1"
+        android:inAnimation="@anim/in_from_left"
+        android:outAnimation="@anim/out_to_right" >
+
+        <!-- The child Views/Layout to flip -->
+
+
+        <!-- Layout 1 for 1st Screen -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+               
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/frame"
+                android:scaleType="fitXY"
+                android:src="@drawable/image3" />
+        </LinearLayout>
+
+        <!-- Layout 2 for 2nd Screen -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/frame"
+                android:scaleType="fitXY"
+                android:src="@drawable/image3" />
+        </LinearLayout>
+        
+        <!-- Layout 3 for 3rd Screen -->
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/frame"
+                android:scaleType="fitXY"
+                android:src="@drawable/image3" />
+        </LinearLayout>
+    </ViewFlipper>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sigin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:text="Existing User"
+            android:textColor="@color/Ivory"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New User"
+            android:id="@+id/signup_button"
+            android:background="@drawable/border"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/Ivory"
+            android:layout_margin="15dp"/>
+    </LinearLayout>
+
+   <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:baselineAligned="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy | "
+            android:textColor="@color/Black"
+            android:id="@+id/privacy" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cookies | "
+            android:textColor="@color/Black"
+            android:id="@+id/cookies" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms | "
+            android:textColor="@color/Black"
+            android:id="@+id/terms" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textColor="@color/Black"
+            android:id="@+id/contactus" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="©2013 Humesis Inc."
+        android:textColor="@color/Black"
+        android:layout_gravity="center"
+        android:id="@+id/copyright" />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="ns_menu_items_icon">
+        <item>ic_action_settings</item>
+        <item>ic_save</item>
+        <item>action_add</item>
+        <item>ic_launcher_</item>
+        <item>action_add</item>
+        <item>ic_action_settings</item>
+        <item>ic_launcher_</item>
+    </array>
+    
+    <array name="ns_menu_items_library">
+        <item>menu_photos</item>
+        <item>menu_music</item>
+        <item>menu_video</item>
+    </array>
+	
+    <array name="ns_menu_items_app">
+        <item>action_settings</item>
+        <item>menu_help</item>
+        <item>menu_rate</item>
+    </array>
+    <array name="language_list">
+         <item>English</item>
+        <item>Japanese</item>
+        <item>Chinese</item>
+    </array>
+    <array name="country_list">
+         <item>India</item>
+        <item>Japan</item>
+        <item>China</item>
+    </array>
+</resources>
